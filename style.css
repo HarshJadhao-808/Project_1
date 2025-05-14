@@ -1,0 +1,468 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: black;
+}
+
+/* Whole Header */
+
+#Head {
+  width: 100%;
+
+  margin: auto;
+  /* border: 3px solid rgb(255, 2, 2); */
+}
+#backgroundimage {
+  background-image: url(./Images/image\ 119.svg);
+  background-color: rgba(81, 255, 0, 1.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 773px;
+  /* border: 5px solid blue; */
+}
+
+/* Navigation Bar */
+
+#Nav_bar {
+  border: 3px solid red;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  position: fixed;
+  padding-top: 15px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 40.99%);
+  /* background-image: url(./Images/Rectangle\ 4177.svg); */
+}
+.hyperlinks {
+  all: unset;
+}
+.hyperlinks:hover {
+  color: #0f5;
+}
+/* Upper Navigation bar */
+
+#nav_1 {
+  /* height: 50%; */
+  /* border: 3px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 8px; */
+}
+#nav_1 > div {
+  /* border: 3px solid green; */
+}
+#swap {
+  color: rgba(255, 255, 255, 1);
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#swap:hover {
+  transform: scale(1.3);
+  color: #0f5;
+}
+
+#earn {
+  color: rgba(255, 255, 255, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#earn:hover {
+  transform: scale(1.3);
+  color: #0f5;
+}
+
+#sonicfun {
+  color: rgba(0, 255, 85, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#sonicfun:hover {
+  transform: scale(1.3);
+}
+
+#select {
+  /* border: 3px solid green; */
+  position: relative;
+  z-index: +10;
+}
+#select img {
+  margin-bottom: 10px;
+  width: 8px;
+}
+
+#select:hover {
+  color: #0f5;
+  /* transition: max-height 0.4s ease, opacity 0.4s ease,visibility 0.4s ease; */
+}
+
+#more {
+  display: flex;
+  color: rgba(255, 255, 255, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 20px; 
+  text-align: center;
+}
+#more:hover {
+  color: #0f5;
+  /* transition: transform 0.3s ease; */
+}
+
+#list {
+  color: rgba(255, 255, 255, 1);
+  z-index: +5;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* border: 3px solid blue; */
+
+}
+
+#select:hover #list {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events:visibleFill;
+  /* display: block; */
+  border: 2px solid;
+}
+#list div {
+  padding: 10px;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+    display: block;
+}
+#list div:hover {
+  background-color: #ffffff15;
+  color: #0f5;
+  display: block;
+}
+
+#nav_1 > :nth-child(1) {
+  /* border: 3px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#nav_1 > :nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#polygon {
+  /* width: 58px; */
+  background-color: red;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(./Images/Polygon\ 1.svg);
+  background-repeat: no-repeat;
+  background-color: white;
+  color: #333;
+  /* background-size: cover; */
+}
+
+#cryptoprice {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 3px solid blue; */
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 291px;
+  height: 42px;
+  top: 58px;
+  left: 722px;
+  gap: 10px;
+  border-radius: 80px;
+  padding: 10px;
+}
+
+#cryptoprice_1 {
+  display: flex;
+  background: none;
+  border: none;
+  width: 50%;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+#cryptoprice_1 img {
+  width: 40%;
+  height: 90%;
+}
+#cryptoprice_1 p {
+  width: 70px;
+  color: rgba(0, 255, 85, 1);
+  /* height: ; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 35px;
+  margin-left: 5px;
+  /* border: 3px solid blue; */
+}
+#cryptoprice_2 {
+  width: 50%;
+  background: none;
+  border: none;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+#cryptoprice_1 p:hover {
+  color: white;
+  transform: translatey(2px);
+}
+#cryptoprice_1 img:hover {
+  transform: translatey(2px);
+}
+
+#cryptoprice_2 p:hover {
+  color: white;
+  transform: translatey(2px);
+}
+#cryptoprice_2 img:hover {
+  transform: translatey(2px);
+}
+
+#cryptoprice_2 p {
+  width: 70px;
+  color: rgba(0, 255, 85, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 35px;
+  margin-left: 5px;
+}
+#cryptoprice_2 img {
+  width: 40%;
+  height: 90%;
+}
+
+#nav_1 > :nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  /* border: 3px solid purple; */
+}
+
+#nav_1 > :nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav_buttons {
+  /* border: 3px solid blue; */
+}
+
+#buttonpop_1 {
+  /* border: 3px solid red; */
+}
+#sheild {
+  /* border: 3px solid purple; */
+  /* margin-bottom: 10px; */
+  position: absolute;
+  top: 6px;
+  left: 75px;
+}
+
+#audited {
+  color: rgba(255, 255, 255, 1);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: bold;
+  margin-right: 150px;
+  margin-top: 3px;
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+#nav_buttons > :nth-child(1) {
+  border-radius: 27.5px;
+  width: 241px;
+  height: 52px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 27.5px;
+  background-color: rgba(29, 193, 96, 0.2);
+}
+#nav_buttons > :nth-child(2) {
+  z-index: +1;
+  margin-left: 90px;
+  background-color: rgba(29, 193, 96, 0.2);
+  width: 149px;
+  height: 52px;
+  border-radius: 100px;
+  border: none;
+}
+
+/* Lower Navigation bar */
+
+#nav_2 {
+  height: 30%;
+  /* border: 3px solid blue; */
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 00px;
+}
+#hot_pairs {
+  /* border: 3px solid red; */
+  border-radius: 30px;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 0%;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  /* margin-bottom: 50px; */
+}
+#hot_pairs:hover {
+  color: #0f5;
+  transform: translatey(-1px);
+}
+#cryptocoins_head {
+  /* border: 3px solid rgb(158, 184, 32); */
+  border-radius: 30px;
+  display: flex;
+  padding-top: 4px;
+  width: 92%;
+  perspective: 1000px;
+  /* height: 100%; */
+  margin-bottom: 5px;
+}
+#cryptocoins_head p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  transform: transform 0.5s ease-in-out;
+}
+.crypto_p {
+  border: 4px solid green;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+#cryptocoins_head p:hover {
+  color: #0f5;
+  transform: scale(1.2);
+}
+
+#cryptocoins_head img {
+  width: 2%;
+  /* border: 3px solid blue; */
+  transform: transform 6.5s ease-in-out;
+  margin-left: 6px;
+  margin-right: 15px;
+}
+#cryptocoins_head img:hover {
+  transform: rotateY(30deg) rotateX(10deg) scale(1.3);
+}
+
+#mar {
+  animation: scroll-left 20s linear infinite;
+}
+#blur {
+  /* border: 5px solid orange; */
+  border-radius: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+#head_nav {
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 56.99%); */
+  height: 197px;
+  /* position: fixed; */
+}
+#head_main {
+  /* border: 3px solid white; */
+  height: 576px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    #000000 80.48%
+  );
+  opacity: 90%;
+  /* border: 10px solid yellow; */
+}
+
+@media all and (min-width:480px) and (max-width:768px){
+#Head {
+  width: 100%;
+
+  margin: auto;
+  /* border: 3px solid rgb(255, 2, 2); */
+}
+#backgroundimage {
+  background-image: url(./Images/image\ 119.svg);
+  background-color: rgba(81, 255, 0, 1.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 773px;
+  /* border: 5px solid blue; */
+}
+
+
+
+
+  
+}
+
+
+
+
