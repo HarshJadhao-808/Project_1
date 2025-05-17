@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Chain Background</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    #bg-img {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    #bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    #layer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: 
+        linear-gradient(120deg, rgba(51, 255, 0, 0.552), rgb(0, 200, 0)),
+        radial-gradient(circle at center, rgba(10, 10, 10, 0.947), transparent 80%);
+      mix-blend-mode: screen;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    #overlay-glow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 255, 0, 0.05);
+      filter: blur(40px);
+      mix-blend-mode: color-dodge;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Optional text placeholder */
+    #text {
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+      color: white;
+    }
+
+    #text h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    #text span {
+      color: #00ff66;
+    }
+  </style>
+</head>
+<body>
+  <div id="bg-img">
+    <img id="bg" src="./Images/image 119.svg" alt="Chain Background" />
+    <div id="layer"></div>
+    <div id="overlay-glow"></div>
+  </div>
+</body>
+</html>
