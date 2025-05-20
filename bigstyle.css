@@ -10,16 +10,19 @@ body {
 
 #Head {
   width: 100%;
+  box-shadow:
+  
 
   margin: auto;
   /* border: 3px solid rgb(255, 2, 2); */
 }
 #backgroundimage {
   background-image: url(./Images/image\ 119.svg);
-  background-color: rgba(81, 255, 0, 1.5);
+  background-color: rgba(81, 255, 10, 1.5);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
+
   /* height: 773px; */
   /* border: 5px solid blue; */
 }
@@ -135,15 +138,15 @@ body {
 }
 
 #list {
-  color: rgba(255, 255, 255, 1);
   z-index: +5;
   position: absolute;
   opacity: 0;
+  padding-top: 30px;
+  line-height: 20px;
   transform: translateY(-10px);
   pointer-events: none;
   transition: opacity 0.6s ease, transform 0.6s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 3px solid blue;
 }
 
 #select:hover #list {
@@ -151,7 +154,7 @@ body {
   transform: translateY(0px);
   pointer-events: auto;
   display: block;
-  border: 2px solid;
+  color: rgba(255, 255, 255, 1);
 }
 #list div {
   padding: 10px;
@@ -455,7 +458,7 @@ body {
   font-weight: 800px;
   font-size: 100px;
   color: rgba(0, 255, 85, 1);
-  box-shadow: 0px 4px 99.6px 0px rgba(0, 0, 0, 1);
+  /* box-shadow: 0px 4px 99.6px 0px rgba(0, 0, 0, 1); */
   font-family: "DotGothic16";
 
   letter-spacing: -5%;
@@ -514,6 +517,7 @@ body {
   width: 400px;
   height: 400px;
   position: absolute;
+
   top: 650px;
   left: 560px;
   border-radius: 50%;
@@ -528,14 +532,16 @@ body {
   );
 }
 #main_box_content a {
-all: unset;
+  all: unset;
 }
 #main_box_content {
   height: 100px;
   display: flex;
   margin-top: 70px;
   /* border: 2px solid blue; */
-  background-color: black;
+  box-shadow: 0px 0px 40px 100px rgba(0, 0, 0, 0.6);
+
+  background-color: rgb(0, 0, 0);
   top: 60px;
   display: flex;
   gap: 30px;
@@ -611,3 +617,398 @@ all: unset;
   /* Dusty/glow border effect */
   box-shadow: 0 0 10px 4px rgba(0, 255, 30, 0.6);
 }
+
+#empty_space {
+  height: 200px;
+  box-shadow:
+  
+
+  0px 0px 1000px 800px rgba(9, 6, 6, 0.449),
+  0px 0px 1000px 800px rgba(32, 113, 12, 0.525);
+
+  
+
+}
+#swap_trades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  background-color: black;
+  box-shadow: 0 0 10px 4px rgb(12, 12, 12);
+  /* border :3px solid white; */
+  width: 100%;
+  height: 700px;
+  position: absolute;
+}
+#swap_trades > div {
+  margin-top: 0px;
+  background-color: rgb(0, 0, 0);
+  background-image: url(./Images/Subtract.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border :3px solid red; */
+  height: 300px;
+}
+.swap_images {
+  position: absolute;
+  z-index: 1;
+  left: 230px;
+  top: -80px;
+}
+.upper_glow {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  left: 260px;
+  top: -30px;
+  border: none;
+  background-color: rgb(28, 168, 74);
+  box-shadow: 0px 0px 1000px 50px rgb(9, 255, 91);
+  opacity: 0.6;
+}
+.lower_glow {
+  width: 400px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  left: 150px;
+  top: 290px;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  box-shadow: 0px -10px 60px 7px rgba(9, 255, 91, 0.6);
+  opacity: 1;
+}
+.side_button {
+  width: 138px;
+  height: 52px;
+  top: 20px;
+  left: 490px;
+  position: absolute;
+  /* border: 3px solid red; */
+  border-radius: 100px;
+  padding: 20px;
+  gap: 10px;
+  background: rgba(0, 255, 85, 0.1);
+}
+.side_button_glow {
+  position: absolute;
+  top: 107px;
+  left: 535px;
+  width: 90px;
+  height: 0px;
+  border-radius: 90%;
+  background: rgba(0, 255, 85, 0.1);
+  border-top: 4px solid #00ff55;
+  box-shadow: 0px -10px 60px 7px rgb(9, 255, 91);
+}
+
+#side_button_p_first {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(29, 193, 96, 1);
+}
+.underline {
+  width: 100px;
+  height: 23px;
+  position: absolute;
+  top: 140px;
+  left: 61px;
+  border-width: 2px;
+  border-radius: 30px;
+  border-top: 4px solid #00ff55;
+  border-radius: 90%;
+  transform: rotate(-10deg);
+}
+
+.swap > p {
+  position: absolute;
+  top: 60px;
+  left: 58px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: rgba(0, 255, 85, 1);
+}
+.swap_info {
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  width: 554px;
+  height: 32;
+}
+.swap_info > p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#swap_trades > :nth-child(2) > img {
+  width: 242px;
+  left: 979px;
+}
+
+/* upper glow  */
+
+#swap_trades > :nth-child(2) > :nth-child(2) {
+  box-shadow: 0px 0px 1000px 70px rgba(238, 52, 126, 1);
+  left:1060px;
+}
+
+/* lower glow  */
+
+
+#swap_trades > :nth-child(2) > :nth-child(3) {
+  box-shadow: 0px -10px 60px 7px rgba(238, 52, 126, 1);
+  left: 990px;
+}
+
+/* side button  */
+
+#swap_trades > :nth-child(2) > :nth-child(4) {
+  background: rgba(238, 52, 126, 0.1);
+  left: 1290px;
+
+}
+
+#side_button_p_second {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: rgba(238, 52, 126, 1);
+
+}
+
+/* side button lower glow and border  */
+
+#swap_trades > :nth-child(2) > :nth-child(5) {
+  box-shadow: 0px -10px 60px 7px rgba(238, 52, 126, 1);
+  border-top: 4px solid rgba(238, 52, 126, 1);
+  left: 1334px;
+}
+
+#underline_2 {
+  border-top: 4px solid rgba(238, 52, 126, 1);
+  left: 880px;
+
+}
+#stake {
+  color: rgba(238, 52, 126, 1);
+  left: 860px;
+  
+}
+
+ /* info para  */
+
+#swap_info_second{
+  left: 920px;
+
+}
+
+
+#swap_trades > :nth-child(3) > img {
+  width: 242px;
+  left: 230px;
+  top: 300px;
+
+}
+
+/* upper glow  */
+
+
+#swap_trades > :nth-child(3) > :nth-child(2) {
+  box-shadow: 0px 0px 1000px 90px rgba(47, 172, 206, 1);
+  top: 360px;
+  left: 310px;
+}
+
+/* lower glow  */
+
+
+#swap_trades > :nth-child(3) > :nth-child(3) {
+  box-shadow: 0px -10px 60px 7px rgba(47, 172, 206, 1);
+  top: 670px;
+}
+
+/* side button  */
+
+#swap_trades > :nth-child(3) > :nth-child(4) {
+  background: rgba(47, 172, 206, 0.1);
+  top: 400px;
+}
+
+#launchpad {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: rgba(47, 172, 206, 1); 
+  top: 450px;
+  left:30px;
+}
+
+#side_button_p_third {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(47, 172, 206, 1);
+}
+
+/* side button lower glow and border  */
+
+#swap_trades > :nth-child(3) > :nth-child(5) {
+  box-shadow: 0px -10px 60px 7px rgba(47, 172, 206, 1);
+  border-top: 4px solid rgba(47, 172, 206, 1);
+top: 488px;
+left: 535px;
+}
+#underline_3 {
+  border-top: 4px solid rgba(47, 172, 206, 1);
+  border-radius: 50%;
+  height: 40px;
+  width: 230px;
+  top: 530px;
+  left: 40px;
+}
+
+ /* info para  */
+
+ #swap_info_third{
+  top: 570px;
+ }
+
+
+#swap_trades > :nth-child(4) > img {
+  width: 165px;
+  left: 1000px;
+  top: 310px;
+  background-color: rgba(183, 0, 255, 1);
+  border-radius: 50%;
+}
+
+/* upper glow  */
+
+#swap_trades > :nth-child(4) > :nth-child(2) {
+  box-shadow: 0px 0px 1000px 90px rgba(183, 0, 255, 1);
+  left: 1030px;
+  top: 410px;
+}
+
+/* lower glow  */
+
+#swap_trades > :nth-child(4) > :nth-child(3) {
+  box-shadow: 0px -10px 60px 7px rgba(183, 0, 255, 1);
+  left: 950px;
+  top: 700px;
+}
+
+/* side button  */
+
+#swap_trades > :nth-child(4) > :nth-child(4) {
+  background: rgba(183, 0, 255, 0.1);
+  width: 165px;
+  left: 1290px;
+  top: 410px
+}
+
+#farms {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: rgba(183, 0, 255, 1);
+  left: 830px;
+  top: 470px;
+}
+
+#side_button_p_fourth {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(183, 0, 255, 1);
+}
+
+/* side button lower glow and border  */
+
+#swap_trades > :nth-child(4) > :nth-child(5) {
+  box-shadow: 0px -10px 60px 7px rgba(183, 0, 255, 1);
+  border-top: 4px solid rgba(183, 0, 255, 1);
+top: 497px;
+left: 1353px;
+}
+#underline_4 {
+  border-top: 4px solid rgba(183, 0, 255, 1);
+  top: 550px;
+  left: 850px;
+}
+
+ /* info para  */
+
+#swap_info_fourth{
+  top: 570px;
+  left: 920px;
+}
+
+#swap_trades a{
+  all: unset;
+}
+
+/* ==================== POP-OUT ON HOVER (SCALE) ==================== */
+/* Panel 1 */
+#swap_trades > :nth-child(1):hover .side_button,
+#swap_trades > :nth-child(1):hover #side_button_p_first,
+#swap_trades > :nth-child(1):hover #underline,
+#swap_trades > :nth-child(1):hover > :nth-child(5) {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+/* Panel 2 */
+#swap_trades > :nth-child(3):hover .side_button,
+#swap_trades > :nth-child(3):hover #side_button_p_second,
+#swap_trades > :nth-child(3):hover #underline_2,
+#swap_trades > :nth-child(3):hover > :nth-child(5) {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+/* Panel 3 */
+#swap_trades > :nth-child(4):hover .side_button,
+#swap_trades > :nth-child(4):hover #side_button_p_third,
+#swap_trades > :nth-child(4):hover #underline_3,
+#swap_trades > :nth-child(4):hover > :nth-child(5) {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+/* Panel 4 */
+#swap_trades > :nth-child(2):hover .side_button,
+#swap_trades > :nth-child(2):hover #side_button_p_fourth,
+#swap_trades > :nth-child(2):hover #underline_4,
+#swap_trades > :nth-child(2):hover > :nth-child(5) {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+

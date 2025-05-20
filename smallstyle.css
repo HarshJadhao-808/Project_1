@@ -2,15 +2,15 @@
   /* Whole Header */
 
   #Head {
-    width: 100%;
-
+    /* width: 100%; */
+    width: 480px;
     margin: auto;
-    /* border: 3px solid rgb(255, 2, 2); */
+    /* border: 3px solid rgb(226, 217, 217); */
   }
 
   #backgroundimage {
     background-position: center;
-    width: 100%;
+    /* border: 3px solid red; */
   }
 
   /* Navigation Bar */
@@ -18,7 +18,7 @@
   #Nav_bar {
     /* border: 3px solid red; */
     height: 200px;
-    width: 100%;
+    z-index: 20;
   }
 
   /* Upper Navigation bar */
@@ -55,17 +55,25 @@
   }
   #swap {
     font-size: 18px;
+    display: none;
   }
 
   #earn {
     font-size: 18px;
+    display: none;
   }
   #sonicfun {
     font-size: 20px;
+    display: none;
   }
   #more {
     font-size: 18px;
   }
+  #list {
+  left: -110px;
+  top: -20px;
+  }
+
   #cryptoprice {
     width: 150px;
     height: 15px;
@@ -73,6 +81,7 @@
     top: 75px;
     left: 170px;
     align-items: center;
+    display: none;
   }
   #cryptoprice_1 {
     width: 90px;
@@ -117,6 +126,7 @@
     position: absolute;
     top: 75px;
     left: 330px;
+    display: none;
   }
   #nav_buttons > :nth-child(1) {
     width: 120px;
@@ -142,7 +152,7 @@
     width: 10px;
   }
   #hot_pairs {
-    width: 24%;
+    width: 32%;
     padding-left: 5px;
     font-size: 15px;
   }
@@ -153,11 +163,12 @@
   #cryptocoins_head p {
     margin-top: 2px;
     font-size: 15px;
+    margin-top: -1px;
   }
   #cryptocoins_head img {
     width: 25%;
     height: 20px;
-    margin-top: 2px;
+    margin-top: -1px;
   }
 
   #nav_2 {
@@ -165,6 +176,12 @@
     margin: 30px 2px;
     margin-top: 40px;
   }
+
+  #head_main{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 60.48%);
+
+  }
+
   #launchpad {
     width: 70%;
     margin-top: -150px;
@@ -188,35 +205,348 @@
   }
   #sonic_blockchain > div > p {
     font-size: 14px;
+    margin-top: 10px;
   }
   #sonic_blockchain > div > img {
     width: 80%;
   }
   #main_box {
-    left: 40px;
-    top: 520px;
+    width: 250px;
+    height: 250px;
+    left: 125px;
+    top: 510px;
+  }
+
+  @media all and(min-width:320px) and (max-width: 400px) {
+    #main_box {
+      left: 0px;
+    }
+  }
+
+  @media all and (min-width: 400px) and (max-width: 480px) {
+    #main_box {
+      left: 125px;
+      top: 510px;
+    }
   }
   #main_box_content {
     display: flex;
     gap: 20px;
-    background-color: black;
     border-radius: 60px;
+    margin-top: -10px;
+    box-shadow: 0px 0px 40px 50px rgba(0, 0, 0, 0.6);
   }
   #main_box_content > :nth-child(1) {
-    width: 140px;
-    height: 52px;
+    width: 70px;
+    height: 22px;
     border-width: 1px;
-    border-radius: 100px;
+    border-radius: 70px;
     gap: 10px;
     padding: 20px;
     border: 2px solid rgba(0, 255, 85, 1);
   }
 
   #main_box_content > :nth-child(2) {
-    width: 150px;
-    height: 52px;
+    width: 70px;
+    height: 22px;
     border-radius: 100px;
     gap: 10px;
     padding: 20px;
   }
+  #main_box_content > div > p {
+    line-height: 20px;
+  }
+  #first_box {
+    top: -5px;
+    left: 125px;
+  }
+
+  #Ssecond_box {
+    top: 41px;
+    left: 227px;
+    z-index: -3;
+  }
+  #Second_box {
+    top: 41px;
+    left: 227px;
+    z-index: 3;
+  }
+  #empty_space {
+    display: none;
+  }
+  #swap_trades {
+    width: 480px;
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+  #swap_trades > div {
+    height: 220px;
+    width: 100%;
+    margin: 0%;
+  }
+  .swap_images {
+    left: 150px;
+    top: -60px;
+    width: 100px;
+  }
+  .upper_glow {
+    left: 180px;
+    top: -13px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 500px 100px rgb(9, 255, 91);
+  }
+  .lower_glow {
+    width: 330px;
+    box-shadow: 0px -24px 40px 10px rgba(9, 255, 91, 0.6);
+    top: 210px;
+    left: 90px;
+  }
+
+  .side_button {
+    width: 110px;
+    height: 25px;
+    top: 10px;
+    left: 320px;
+    border-radius: 40px;
+  }
+  .side_button_glow {
+    /* border: 3px solid blue; */
+    top: 69px;
+    left: 360px;
+    width: 78px;
+  }
+  #side_button_p_first {
+    font-size: 32px;
+    margin-top: -10px;
+    margin-left: 8px;
+  }
+  .underline {
+    top: 90px;
+    left: 55px;
+    width: 80px;
+  }
+
+  .swap > p {
+    top: 30px;
+    left: 50px;
+    font-size: 35px;
+  }
+
+  .swap_info {
+    width: 324px;
+    top: 110px;
+    left: 100px;
+  }
+  .swap_info > p {
+    font-size: 17px;
+  }
+
+  #swap_trades > :nth-child(2) > img {
+    width: 242px;
+    left: 79px;
+    top: 200px;
+  }
+  
+  /* upper glow  */
+  
+  #swap_trades > :nth-child(2) > :nth-child(2) {
+    left:150px;
+    top: 280px;
+  box-shadow: 0px 0px 1000px 120px rgba(238, 52, 126, 1);
+
+  }
+  
+  /* lower glow  */
+  
+  
+  #swap_trades > :nth-child(2) > :nth-child(3) {
+    top: 500px;
+    left: 90px;
+  }
+  
+  /* side button  */
+  
+  #swap_trades > :nth-child(2) > :nth-child(4) {
+    top: 300px;
+    left: 320px;
+  
+  }
+  #side_button_p_second {
+    font-size: 32px;
+    margin-top: -10px;
+    margin-left: 8px;
+  }
+  
+  
+  /* side button lower glow and border  */
+  
+  #swap_trades > :nth-child(2) > :nth-child(5) {
+    top: 360px;
+    left: 360px;
+  }
+  
+  #underline_2 {
+
+    top: 390px;
+    left: 55px;
+    width: 80px;
+  
+  }
+  #stake {
+
+    top: 330px;
+    left: 50px;
+    font-size: 35px;
+    
+  }
+  
+   /* info para  */
+  
+  #swap_info_second{
+    width: 324px;
+    top: 410px;
+    left: 100px;    
+    font-size: 17px;
+  
+  }
+
+
+  #swap_trades > :nth-child(3) > img {
+    width: 242px;
+    left: 79px;
+    top: 500px;
+  
+  }
+  
+  /* upper glow  */
+  
+  
+  #swap_trades > :nth-child(3) > :nth-child(2) {
+    left:160px;
+    top: 580px;
+  box-shadow: 0px 0px 500px 110px rgba(47, 172, 206, 1);
+  }
+  
+  /* lower glow  */
+  
+  
+  #swap_trades > :nth-child(3) > :nth-child(3) {
+    top: 820px;
+    left: 90px;
+  }
+  
+  /* side button  */
+  
+  #swap_trades > :nth-child(3) > :nth-child(4) {
+    top: 600px;
+    left: 320px;
+  
+  }
+  
+  #launchpad {
+    top: 815px;
+    left: -80px;
+    font-size: 27px;
+  }
+  
+  #side_button_p_third {
+    font-size: 22px;
+    margin-top: -3px;
+    margin-left: 8px;
+  }
+  
+  /* side button lower glow and border  */
+  
+  #swap_trades > :nth-child(3) > :nth-child(5) {
+    top: 660px;
+    left: 360px;
+  }
+  #underline_3 {
+    top: 715px;
+    left: 25px;
+    width: 140px;
+  }
+  
+   /* info para  */
+  
+   #swap_info_third{
+    width: 324px;
+    top: 740px;
+    left: 120px;    
+    font-size: 17px;
+  
+   }
+  
+
+
+   #swap_trades > :nth-child(4) > img {
+    width: 122px;
+    left: 159px;
+    top: 860px;
+  }
+  
+  /* upper glow  */
+  
+  #swap_trades > :nth-child(4) > :nth-child(2) {
+    left:190px;
+    top: 860px;
+  box-shadow: 0px 0px 570px 140px rgba(183, 0, 255, 1);
+
+  }
+  
+  /* lower glow  */
+  
+  #swap_trades > :nth-child(4) > :nth-child(3) {
+    top: 1120px;
+    left: 90px;
+  }
+  
+  /* side button  */
+  
+  #swap_trades > :nth-child(4) > :nth-child(4) {
+    top: 900px;
+    left: 320px;
+    width: 110px;
+  }
+  
+  #farms {
+    top: 920px;
+    left: 20px;
+  }
+  
+  #side_button_p_fourth {
+    margin-top: -10px;
+    margin-left: 8px;
+  }
+  
+  /* side button lower glow and border  */
+  
+  #swap_trades > :nth-child(4) > :nth-child(5) {
+    top: 960px;
+    left: 360px;
+  }
+  #underline_4 {
+    top: 1000px;
+    left: 35px;
+    width: 80px;
+  }
+  
+   /* info para  */
+  
+  #swap_info_fourth{
+    top: 1030px;
+    left: 130px;    
+  }
+
+
+
+
+
+
+
+
+
+
+
 }
